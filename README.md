@@ -3,21 +3,47 @@
 Data accompanying the manuscript:
 
 **Dating the early pipid evolutionary radiation in western Gondwana**  
- by Alfred Lemierre, Gilles Didier, and Michel Laurin
+Alfred Lemierre, Gilles Didier, and Michel Laurin
 
-Directory `data` contains
-- the stratigraphic datasets with (`Pipoid_occurences_old_11_25.csv`) and without (` Pipoid_occurences_young.csv`) the oldest occurrences of *Pachycentrata*;
-- the two sets of most parsimonious trees: constrained (`Topology_constrainnostromeri_fixed.tre`) and unconstrained (`Topology_unconstrainnostromeri_fixed.tre`);
-- the two consensus trees used to displaying the results (`Topologyconsensus_constrainnostromeri_fixed.tre` and `Topologyconsensus_unconstrainnostromeri_fixed.tre`)
+## Contents
 
+### `data`
 
-Directory `src` contains the source files of the software. It requires the [cairo](https://www.cairographics.org/) and [GSL](https://www.gnu.org/software/gsl/) libraries. In order to build the software, just type
-```
+The directory `data` contains:
+
+- the stratigraphic occurrence datasets:
+  - with the oldest occurrences of *Pachycentrata*: `Pipoid_occurences_old_11_25.csv`;
+  - without the oldest occurrences of *Pachycentrata*: `Pipoid_occurences_young.csv`;
+- the two sets of most parsimonious trees:
+  - constrained topology: `Topology_constrainnostromeri_fixed.tre`;
+  - unconstrained topology: `Topology_unconstrainnostromeri_fixed.tre`;
+- the two consensus trees used to display the results:
+  - constrained consensus topology: `Topologyconsensus_constrainnostromeri_fixed.tre`;
+  - unconstrained consensus topology: `Topologyconsensus_unconstrainnostromeri_fixed.tre`.
+
+### `src`
+
+The directory `src` contains the source files of the software.
+
+The software requires the following libraries:
+
+- [cairo](https://www.cairographics.org/)
+- [GSL](https://www.gnu.org/software/gsl/)
+
+To build the software, run:
+
+```sh
 make all
 ```
-in the src directory.
 
-Directory `clades` contains the files of the clades considered in the study.
+from the `src` directory.
 
-File `script.sh` contains the commands used to produce the figures. It needs to be edited to fit your file organization.
+### `clades`
 
+The directory `clades` contains the files describing the clades considered in the study.
+
+### `script.sh`
+
+The file `script.sh` contains the commands used to produce the figures.
+
+It must be edited to match your local file organization.

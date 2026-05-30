@@ -1,4 +1,4 @@
-#Working directories - to be changed in order to fit your file organization
+#Working directories - to be changed in order to match your file organization
 exec_dir="/home/gilles/Dropbox/AlfredDev/src"
 data_dir="/home/gilles/Dropbox/AlfredDev/data"
 clad_dir="/home/gilles/Dropbox/AlfredDev/clades"
